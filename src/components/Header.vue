@@ -3,10 +3,10 @@
 		<div class="container">
 			<img src="../assets/img/dc-logo.png" alt="">
 			<ul>
-				<li v-for = "(link,index) in links"
+				<li  v-for = "(link,index) in links"
 				:key="index"
 				>
-				<a href="">{{link}}</a>
+				<a :class="{active: index === 1}" href="">{{link}}</a>
 
 				</li>
 				
@@ -42,9 +42,21 @@ export default {
 <style lang = 'scss' scope >
 	header{
 		padding: 20px 0;
+		
+		& > div{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+			img{
+				max-width: 80px;
+			}
+		}
+
 		ul{
 			list-style: none;
 			display: flex;
+
 			li{
 				padding-right: 30px;
 				position: relative;
@@ -53,23 +65,29 @@ export default {
 				&:last-child{
 					padding-right: 0;
 				}
+				
 				a{
-					color:#464652;
+					position: relative;
 					&:hover{
-						color: #5382f9;
+						color: #0282f9;
 					}
+				
 				}
 			}
 		}
-		div{
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-		img{
-			height: 80px;
-			width: 80px;
-		}
+		
 
 	}
+	
+	.active::after{
+						content: '';
+						background: #0282f9;
+						height: 5px;
+						width: 100%;
+						position: absolute;
+						bottom: -290%;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+	
 </style>
