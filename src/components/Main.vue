@@ -5,13 +5,14 @@
 			<section>
 				<ul>
 					<li	v-for = '(comics,index) in info'
-							:key = "`item-${index}`">
-						<!-- <img :src="comics.thumb" alt="">
-						<h3>{{comics.series}}</h3> -->
+							:key = "`item-${index}`"
+							>
+
 						<Item
 							:img='comics.thumb'
 							:title='comics.series'
 						/>
+						
 					</li>
 				</ul>
 			</section>

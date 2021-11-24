@@ -39,11 +39,11 @@ export default {
 
 </script>
 
-<style lang = 'scss' scope >
+<style lang = 'scss' scoped >
 @import '@/styles/variables';
 
 	header{
-		padding: 20px 0;
+		position: relative;
 		
 		& > div{
 			display: flex;
@@ -60,13 +60,19 @@ export default {
 			display: flex;
 
 			li{
-				padding-right: 30px;
+				margin-right: 30px;
 				position: relative;
 				text-transform: uppercase;
+				height: 100px;
+				display: flex;
+				align-items: center;
+			
 				
 				&:last-child{
-					padding-right: 0;
+					margin-right: 0;
+
 				}
+					
 				
 				a{
 					font-size: 0.7rem;
@@ -75,6 +81,7 @@ export default {
 					&:hover{
 						color: $brandColor;
 					}
+				
 				} 
 			}
 		}
@@ -82,6 +89,14 @@ export default {
 
 	}
 	
-
+	.active::after{
+						content: '';
+						width: 100%;
+						height: 4px;
+						background-color: $brandColor;
+						display: block;	
+						position: absolute;
+						bottom: 0;
+						}
 	
 </style>
