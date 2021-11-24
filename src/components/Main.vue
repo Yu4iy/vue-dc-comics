@@ -4,9 +4,14 @@
 			<div class="curent-series">Curent Series</div>
 			<section>
 				<ul>
-					<li v-for = '(comics,index) in info' :key = "`item-${index}`">
-						<img :src="comics.thumb" alt="">
-						<h3>{{comics.series}}</h3>
+					<li	v-for = '(comics,index) in info'
+							:key = "`item-${index}`">
+						<!-- <img :src="comics.thumb" alt="">
+						<h3>{{comics.series}}</h3> -->
+						<Item
+							:img='comics.thumb'
+							:title='comics.series'
+						/>
 					</li>
 				</ul>
 			</section>
@@ -18,8 +23,12 @@
 </template>
 
 <script>
+import Item from '@/components/Item.vue'
 export default {
 name:'Main',
+components:{	
+Item,
+},
 data(){
 	return{
 		info:[
@@ -127,18 +136,13 @@ main{
 		
 		li{
 			width: calc(100% / 6);
-			img{
-				width: 190px;
-				height: 55%;
-				object-fit: cover;
-				object-position: top;
-			}
-			h3{
-				color: $whitheColor;
-			}
+			padding: 1rem;
+			font-size: 0.8rem;
+			
 		}
 	}
 	.btn{
+		margin-top: 5rem;
 		display: flex;
 		justify-content: center;
 	}

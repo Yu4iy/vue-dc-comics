@@ -13,6 +13,7 @@
       <FooterLinks/>
       <FooterAbout/>
     </footer>
+    
   </div>
 </template>
 
