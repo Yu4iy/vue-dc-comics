@@ -70,7 +70,7 @@ name:'FooterLinks'
 				background-image: url(../assets/img/dc-logo-bg.png);
 				background-repeat: no-repeat;
 				background-position: center right;
-				background-size:  40%;
+				background-size:  50%;
 					.comics-links{
 						padding: 40px 25px  60px 0;
 						h2{
@@ -80,7 +80,7 @@ name:'FooterLinks'
 							text-transform: uppercase;
 						}
 						li{
-							
+							margin-bottom: 0.6rem ;
 							color:$colorLightGray;
 							font-size: 0.8rem;
 						}

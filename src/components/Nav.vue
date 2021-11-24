@@ -62,8 +62,10 @@ data() {
 				display: flex;
 				align-items: center;
 				img{
-					height: 55px					
+					height: 55px	
+									
 				}
+
 				h3{
 					font-size: 10px;
 					margin-left: 15px;
