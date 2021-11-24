@@ -69,7 +69,7 @@ export default {
 				}
 				
 				a{
-					color: $brandColor;
+					color: $brownColor;
 					position: relative;
 					&:hover{
 						color: $brandColor;

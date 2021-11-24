@@ -3,7 +3,7 @@
 	<div class="container">
 			<div class="items">
 				<div v-for = "(item,index) in navItems" :key = 'index' class="item">
-					<img  src="../assets/img/buy-comics-digital-comics.png" alt="">
+					<img  :src = "item.img" alt="">
 					<h3>{{item.title}}</h3>
 				</div>
 			</div>
@@ -19,23 +19,23 @@ data() {
 		navItems: 
 			[
 				{
-				img:"buy-comics-digital-comics.png",
+				img:require('../assets/img/buy-comics-digital-comics.png'),
 				title:"Digital Comics"
 				},
 				{
-				img:"buy-comics-merchandise.png",
+				img:require('../assets/img/buy-comics-merchandise.png'),
 				title:"DC Merchandise"
 				},
 				{
-				img:"buy-comics-subscriptions.png",
+				img:require('../assets/img/buy-comics-subscriptions.png'),
 				title:"Subscription"
 				},
 				{
-				img:"buy-comics-shop-locator.png",
+				img:require('../assets/img/buy-comics-shop-locator.png'),
 				title:"Comic Shop Locator"
 				},
 				{
-				img:"buy-dc-power-visa.svg",
+				img:require('../assets/img/buy-dc-power-visa.svg'),
 				title:"DC Power Visa"
 				},
 			],
@@ -50,33 +50,25 @@ data() {
 
 	section{
 		background: $brandColor;
-		padding: 20px;
-		& > div{
+		padding: 50px;
+
+		.items{
+			width: 100%;
 			display: flex;
-			justify-content: center;
-		}
-	}
-	.items{
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		
+			justify-content: space-between;
+			padding: 0 30px;
 
-	}
-	.item{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 20px;
-		width: calc(100% / 5);
-
-
-		img{
-			max-width: 50px;
-		}
-		h3{
-			color: #fff;
-			padding: 0 0 0 5px;
+			.item{
+				display: flex;
+				align-items: center;
+				img{
+					height: 55px					
+				}
+				h3{
+					font-size: 10px;
+					margin-left: 15px;
+				}
+			}
 		}
 	}
 </style>
