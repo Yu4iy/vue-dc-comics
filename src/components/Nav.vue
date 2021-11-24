@@ -67,6 +67,8 @@ data() {
 				h3{
 					font-size: 10px;
 					margin-left: 15px;
+					text-transform: uppercase;
+					color: $whitheColor;
 				}
 			}
 		}

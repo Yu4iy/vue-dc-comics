@@ -33,7 +33,7 @@ export default {
     Nav,
     FooterLinks,
     FooterAbout,
-    Hero
+    Hero,
   }
 }
 </script>

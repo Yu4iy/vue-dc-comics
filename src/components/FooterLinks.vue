@@ -4,43 +4,45 @@
 			<section>				
 				<div class="comics-links">
 					<ul>
-						<li><h2>Title</h2></li>
+						<li><h2>DS comics</h2></li>
 						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
+						<li>Comics</li>
+						<li>Movies</li>
+						<li>Tv</li>
+						<li>Games</li>
+						<li>Videos</li>
+						<li>News</li>
 					</ul>
 						<ul>
-						<li><h2>Title</h2></li>
-						<li>Characters</li>
-						<li>Characters</li>
+						<li><h2>Shop</h2></li>
+						<li>Shop DC</li>
+						<li>Shop DC Colectibles</li>
 					</ul>
 				</div>
 				<div class="comics-links">
 					<ul>
-						<li><h2>Title</h2></li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
+						<li><h2>DC</h2></li>
+						<li>Terms Of Use</li>
+						<li>Privacy Policy</li>
+						<li>Ad Choices</li>
+						<li>Advertising</li>
+						<li>Jobs</li>
+						<li>Subscriptions</li>
+						<li>Talent Workshops</li>
+						<li>CPSC Certificates</li>
+						<li>Ratings</li>
+						<li>Shop Help</li>
+						<li>Contact Us</li>
 					</ul>
 				</div>
 				<div class="comics-links">
 					<ul>
-						<li><h2>Title</h2></li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
-						<li>Characters</li>
+						<li><h2>Sites</h2></li>
+						<li>DC</li>
+						<li>MAD Magazine</li>
+						<li>DC Kids</li>
+						<li>DC Universe</li>
+						<li>DC Power Visa</li>
 					</ul>
 				</div>	
 			</section>
@@ -75,8 +77,10 @@ name:'FooterLinks'
 							color: $whitheColor;
 							font-size: 1rem;
 							margin: 0.7rem 0 0.7rem 0;
+							text-transform: uppercase;
 						}
 						li{
+							
 							color:$colorLightGray;
 							font-size: 0.8rem;
 						}
