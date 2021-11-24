@@ -62,7 +62,8 @@ data() {
 				display: flex;
 				align-items: center;
 				img{
-					height: 55px	
+					height: 52px;
+					width: 47px;	
 									
 				}
 

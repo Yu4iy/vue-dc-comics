@@ -31,11 +31,15 @@ section{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 30px 0;
+			padding: 2rem 1rem;
 		}
 		.sign-up{
 			padding: 1rem;
 			border: 2px solid $brandColor;
+			transition: linear 0.2s;
+				&:hover{
+					background-color: $brandColor;
+				}
 				a{
 					color: $whitheColor;
 					text-transform: uppercase;
@@ -58,6 +62,13 @@ section{
 			img{
 				width: 40px;
 				padding-left: 18px;
+				cursor: pointer;
+				transition: linear 0.2s;
+				&:hover{
+					scale: 1.1;
+					
+					
+				}
 			}
 		}
 

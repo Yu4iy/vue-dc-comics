@@ -155,7 +155,13 @@ main{
 		padding: 1rem 4rem;
 		text-transform: uppercase;
 		font-weight: 600;
+		border: 6px solid $colorBlack;
+		transition: 0.1s linear;
+		cursor: pointer;
+			&:hover{
+				box-shadow: 5px 0px 0px 0px $brandColor, 0px 5px 0px 0px $brandColor, -5px 0px 0px 0px $brandColor, 0px 0px 0px 5px $brandColor, 4px 4px 10px 4px rgba(235, 235, 235, 0);
+			}
 
 	}
-}	
+}
 </style>
