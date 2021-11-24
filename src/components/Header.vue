@@ -40,6 +40,8 @@ export default {
 </script>
 
 <style lang = 'scss' scope >
+@import '@/styles/variables';
+
 	header{
 		padding: 20px 0;
 		
@@ -67,9 +69,10 @@ export default {
 				}
 				
 				a{
+					color: $brandColor;
 					position: relative;
 					&:hover{
-						color: #0282f9;
+						color: $brandColor;
 					}
 				
 				}
@@ -81,7 +84,7 @@ export default {
 	
 	.active::after{
 						content: '';
-						background: #0282f9;
+						background: $brandColor;
 						height: 5px;
 						width: 100%;
 						position: absolute;

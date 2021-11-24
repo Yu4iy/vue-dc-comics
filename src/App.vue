@@ -1,10 +1,16 @@
 <template>
   <div id="app">
     <Header />
+
     <main>
       <Main/>
     </main>
+
     <Nav/>
+
+    <footer>
+      <FooterLinks/>
+    </footer>
   </div>
 </template>
 
@@ -12,34 +18,18 @@
 import Header from '@/components/Header.vue'
 import Main from '@/components/Main.vue'
 import Nav from '@/components/Nav.vue'
+import FooterLinks from '@/components/FooterLinks.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Main,
     Nav,
+    FooterLinks,
   }
 }
 </script>
 
 <style lang="scss">
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  text-decoration: none;
-	
-
-}
-
-img{
-  max-width: 100%;
-}
-
-.container{
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
+@import '@/styles/globals'
 </style>

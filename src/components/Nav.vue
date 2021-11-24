@@ -1,28 +1,11 @@
 <template>
 	<section>
-		<div class="container">
+	<div class="container">
 			<div class="items">
-				<div class="item">
+				<div v-for = "(item,index) in navItems" :key = 'index' class="item">
 					<img  src="../assets/img/buy-comics-digital-comics.png" alt="">
-					<h3>digital comics</h3>
+					<h3>{{item.title}}</h3>
 				</div>
-				<div class="item">
-					<img  src="../assets/img/buy-comics-digital-comics.png" alt="">
-					<h3>digital comics</h3>
-				</div>
-				<div class="item">
-					<img  src="../assets/img/buy-comics-digital-comics.png" alt="">
-					<h3>digital comics</h3>
-				</div>
-				<div class="item">
-					<img  src="../assets/img/buy-comics-digital-comics.png" alt="">
-					<h3>digital comics</h3>
-				</div>
-				<div class="item">
-					<img  src="../assets/img/buy-comics-digital-comics.png" alt="">
-					<h3>digital comics</h3>
-				</div>
-				
 			</div>
 		</div>
 	</section>
@@ -30,30 +13,70 @@
 
 <script>
 export default {
-name:"Vue"
+name:"Vue",
+data() {
+	return {
+		navItems: 
+			[
+				{
+				img:"buy-comics-digital-comics.png",
+				title:"Digital Comics"
+				},
+				{
+				img:"buy-comics-merchandise.png",
+				title:"DC Merchandise"
+				},
+				{
+				img:"buy-comics-subscriptions.png",
+				title:"Subscription"
+				},
+				{
+				img:"buy-comics-shop-locator.png",
+				title:"Comic Shop Locator"
+				},
+				{
+				img:"buy-dc-power-visa.svg",
+				title:"DC Power Visa"
+				},
+			],
+		}
+	}
+
 }
 </script>
 
 <style lang = "scss" scoped>
+@import '@/styles/variables';
+
 	section{
-		background: #0282f9;
+		background: $brandColor;
+		padding: 20px;
+		& > div{
+			display: flex;
+			justify-content: center;
+		}
 	}
 	.items{
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
+		
+
 	}
 	.item{
 		display: flex;
+		justify-content: center;
 		align-items: center;
-		width: 100% / 5;
-		padding: 0 30px;
+		padding: 0 20px;
+		width: calc(100% / 5);
+
 
 		img{
-			max-width: 55px;
+			max-width: 50px;
 		}
 		h3{
 			color: #fff;
-			padding: 0 0 0 10px;
+			padding: 0 0 0 5px;
 		}
 	}
 </style>
