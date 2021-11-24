@@ -3,6 +3,7 @@
     <Header />
 
     <main>
+      <Hero/>
       <Main/>
     </main>
 
@@ -22,6 +23,7 @@ import Main from '@/components/Main.vue'
 import Nav from '@/components/Nav.vue'
 import FooterLinks from '@/components/FooterLinks.vue'
 import FooterAbout from '@/components/FooterAbout.vue'
+import Hero from '@/components/Hero.vue'
 
 export default {
   name: 'App',
@@ -31,6 +33,7 @@ export default {
     Nav,
     FooterLinks,
     FooterAbout,
+    Hero
   }
 }
 </script>

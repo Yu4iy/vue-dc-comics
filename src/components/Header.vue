@@ -69,8 +69,9 @@ export default {
 				}
 				
 				a{
+					font-size: 0.7rem;
+					font-weight: 700;
 					color: $brownColor;
-					position: relative;
 					&:hover{
 						color: $brandColor;
 					}
@@ -81,15 +82,6 @@ export default {
 
 	}
 	
-	.active::after{
-						content: '';
-						background: $brandColor;
-						height: 5px;
-						width: 100%;
-						position: absolute;
-						bottom: -290%;
-						left: 50%;
-						transform: translateX(-50%);
-					}
+
 	
 </style>
