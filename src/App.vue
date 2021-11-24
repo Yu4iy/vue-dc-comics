@@ -10,15 +10,19 @@
 
     <footer>
       <FooterLinks/>
+      <FooterAbout/>
     </footer>
   </div>
 </template>
 
 <script>
+
 import Header from '@/components/Header.vue'
 import Main from '@/components/Main.vue'
 import Nav from '@/components/Nav.vue'
 import FooterLinks from '@/components/FooterLinks.vue'
+import FooterAbout from '@/components/FooterAbout.vue'
+
 export default {
   name: 'App',
   components: {
@@ -26,6 +30,7 @@ export default {
     Main,
     Nav,
     FooterLinks,
+    FooterAbout,
   }
 }
 </script>
